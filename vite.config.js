@@ -11,15 +11,15 @@ const getRepoName = () => {
       const [, name] = repo.split('/')
       return `/${name}/`
     }
-    return '/'
+    return ''
   } catch (e) {
-    return '/'
+    return ''
   }
 }
 
 module.exports = defineConfig({
   plugins: [vue()],
-  base: process.env.NODE_ENV === 'production' ? getRepoName() : '/',
+  base: process.env.NODE_ENV === 'production' && getRepoName() ? getRepoName() : '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
