@@ -6,6 +6,17 @@
 
 基于 Vue 3 + Vite 构建的现代化、响应式企业官网项目。
 
+## 📸 项目预览
+
+<table>
+  <tr>
+    <td><img src="README/image-20250415102352743.png" alt="首页预览" width="600"/></td>
+  </tr>
+  <tr>
+    <td><img src="README/image-20250415102421339.png" alt="功能展示" width="600"/></td>
+  </tr>
+</table>
+
 ## 🚀 技术栈
 
 - **前端框架**: Vue 3 + Composition API
