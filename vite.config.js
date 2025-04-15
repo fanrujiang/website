@@ -4,7 +4,6 @@ const path = require('path')
 
 module.exports = defineConfig({
   plugins: [vue()],
-  base: '/website/', // 直接设置为仓库名
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
