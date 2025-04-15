@@ -5,10 +5,15 @@ const path = require('path')
 // 获取仓库名称，用于 GitHub Pages 部署
 const getRepoName = () => {
   try {
+    // GITHUB_REPOSITORY 格式为 "组织名/仓库名" 或 "用户名/仓库名"
     const repo = process.env.GITHUB_REPOSITORY
-    return repo ? '/' + repo.split('/')[1] : ''
+    if (repo) {
+      const [, name] = repo.split('/')
+      return `/${name}/`
+    }
+    return '/'
   } catch (e) {
-    return ''
+    return '/'
   }
 }
 
