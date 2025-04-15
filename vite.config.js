@@ -19,7 +19,10 @@ const getRepoName = () => {
 
 module.exports = defineConfig({
   plugins: [vue()],
-  base: process.env.NODE_ENV === 'production' && getRepoName() ? getRepoName() : '/',
+  // 正式使用注释这一行
+  base: '/website/',
+  // 正式使用取消注释这一行
+  // base: process.env.NODE_ENV === 'production' && getRepoName() ? getRepoName() : '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
