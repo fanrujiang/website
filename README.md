@@ -7,6 +7,7 @@
 基于 Vue 3 + Vite 构建的现代化、响应式企业官网项目。
 
 ## 📸 项目预览
+[访问示例网站](https://xxxsas.github.io/website/)
 
 <table>
   <tr>
